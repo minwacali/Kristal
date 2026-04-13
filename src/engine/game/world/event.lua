@@ -260,7 +260,7 @@ end
 ---@param layer?    number
 ---@param color?    Color   The color used to draw the flash, defaulting to white
 ---@return FlashFade
-function Event:flash(offset_x, offset_y, layer, color)
+function Event:flash(sprite, offset_x, offset_y, layer, color)
     local sprite_to_use = sprite or self.sprite
     return sprite_to_use:flash(offset_x, offset_y, layer, color)
 end
